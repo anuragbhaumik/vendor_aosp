@@ -235,4 +235,11 @@ PRODUCT_PACKAGES += \
     SystemClearSpringOverlay \
     SystemUIClearSpringOverlay
 
+# QS tile styles
+PRODUCT_PACKAGES += \
+    QStileCircleTrim \
+    QStileDefault \
+    QStileDualToneCircle \
+    QStileSquircleTrim
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
