@@ -245,6 +245,7 @@ PRODUCT_PACKAGES += \
     QStileDottedCircle \
     QStileNinja \
     QStilePokesign \
-    QStileWavey
+    QStileWavey \
+    QStileSquaremedo
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
