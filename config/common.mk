@@ -115,6 +115,7 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 # Settings
 PRODUCT_PACKAGES += \
     SystemPitchBlackOverlay \
+    SystemUIPitchBlackOverlay \
     SystemDarkGrayOverlay \
     SystemUIDarkGrayOverlay \
     SystemStyleOverlay \
