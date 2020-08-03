@@ -106,6 +106,15 @@ DEVICE_PACKAGE_OVERLAYS += \
     vendor/aosp/overlay/common \
     vendor/aosp/overlay-pixel/common
 
+# GVM
+PRODUCT_PACKAGES += \
+    GVM-SBH-L \
+    GVM-SBH-M \
+    GVM-SBH-XL \
+    GVM-URM-M \
+    GVM-URM-L \
+    GVM-URM-R
+
 # TouchGestures
 PRODUCT_PACKAGES += \
     TouchGestures
