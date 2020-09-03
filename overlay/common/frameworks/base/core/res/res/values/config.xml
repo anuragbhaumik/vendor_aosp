@@ -34,6 +34,11 @@
 
     <bool name="config_cellBroadcastAppLinks">true</bool>
 
+    <!-- Force enable styles -->
+    <string-array name="config_forceEnabledComponents" translatable="false">
+        <item>com.google.android.apps.wallpaper/com.android.customization.picker.CustomizationPickerActivity</item>
+    </string-array>
+
     <string name="config_mms_user_agent">Android</string>
     <string name="config_mms_user_agent_profile_url">http://www.google.com/oha/rdf/ua-profile-kila.xml</string>
 
