@@ -268,6 +268,7 @@ PRODUCT_PACKAGES += \
     # Navbar
 PRODUCT_PACKAGES += \
     GesturalNavigationOverlayLong \
-    GesturalNavigationOverlayMedium
+    GesturalNavigationOverlayMedium \
+    GesturalNavigationOverlayHidden
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
