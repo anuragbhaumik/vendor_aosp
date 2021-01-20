@@ -176,16 +176,14 @@ PRODUCT_PACKAGES += \
 endif
 
 # Face Unlock
-#TARGET_FACE_UNLOCK_SUPPORTED ?= true
-#ifneq ($(TARGET_GAPPS_ARCH),arm64)
-#TARGET_FACE_UNLOCK_SUPPORTED := false
-#endif
-#ifeq ($(TARGET_FACE_UNLOCK_SUPPORTED),true)
-#PRODUCT_PACKAGES += \
-#    FaceUnlockService
-#PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-#    ro.face.moto_unlock_service=$(TARGET_FACE_UNLOCK_SUPPORTED)
-#endif
+TARGET_FACE_UNLOCK_SUPPORTED := false
+ifeq ($(TARGET_USES_FACE_UNLOCK), true)
+PRODUCT_PACKAGES += \
+    FaceUnlockService
+TARGET_FACE_UNLOCK_SUPPORTED := true
+endif
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.face.moto_unlock_service=$(TARGET_FACE_UNLOCK_SUPPORTED)
 
 # Apex
 $(call inherit-product, vendor/aosp/config/apex.mk)
