@@ -18,6 +18,7 @@ endif
 # Branding
 HYCON_BUILD_TYPE ?= UNOFFICIAL
 HYCON_VERSION := 1.0
+HYCON_CODENAME := Aureus
 
 CUSTOM_DATE_YEAR := $(shell date -u +%Y)
 CUSTOM_DATE_MONTH := $(shell date -u +%m)
@@ -31,11 +32,12 @@ CUSTOM_PLATFORM_VERSION := 11.0
 
 TARGET_PRODUCT_SHORT := $(subst aosp_,,$(CUSTOM_BUILD))
 
-CUSTOM_VERSION := HyconOS_$(CUSTOM_BUILD)-$(CUSTOM_PLATFORM_VERSION)-$(CUSTOM_BUILD_DATE)-$(HYCON_BUILD_TYPE)
+CUSTOM_VERSION := HyconOS_$(HYCON_VERSION)_$(CUSTOM_BUILD)-$(CUSTOM_PLATFORM_VERSION)-$(CUSTOM_BUILD_DATE)-$(HYCON_BUILD_TYPE)
 CUSTOM_VERSION_PROP := eleven
 
 ADDITIONAL_BUILD_PROPERTIES += \
     org.hycon.version=$(HYCON_VERSION) \
+    org.hycon.codename=$(HYCON_CODENAME) \
     org.pixelexperience.version=$(CUSTOM_VERSION_PROP) \
     org.pixelexperience.version.display=$(CUSTOM_VERSION) \
     org.pixelexperience.build_date=$(CUSTOM_BUILD_DATE) \
