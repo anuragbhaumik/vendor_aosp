@@ -111,6 +111,10 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI \
     NexusLauncherRelease
 
+# Hycon Packages
+PRODUCT_PACKAGES += \
+    ThemePicker
+
 # Custom Overlays
 # Settings
 PRODUCT_PACKAGES += \
