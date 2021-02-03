@@ -19,8 +19,8 @@ endif
 
 # Branding
 HYCON_BUILD_TYPE ?= UNOFFICIAL
-HYCON_VERSION := 1.0
-HYCON_CODENAME := Aureus
+HYCON_VERSION := 1.5
+HYCON_CODENAME := Zephyrus
 
 CUSTOM_DATE_YEAR := $(shell date -u +%Y)
 CUSTOM_DATE_MONTH := $(shell date -u +%m)
