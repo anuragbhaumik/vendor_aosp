@@ -113,8 +113,9 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 
 # Hycon Packages
 PRODUCT_PACKAGES += \
-    ThemePicker \
-    HyconThemesStub
+    HyconThemesStub \
+    StitchImage \
+    ThemePicker
 
 # Themed bootanimation
 TARGET_MISC_BLOCK_OFFSET ?= 0
