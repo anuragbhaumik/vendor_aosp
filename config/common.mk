@@ -114,6 +114,7 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 # Hycon Packages
 PRODUCT_PACKAGES += \
     HyconThemesStub \
+    OmniStyle \
     StitchImage \
     ThemePicker
 
