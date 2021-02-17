@@ -89,6 +89,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     SimpleDeviceConfig
 
+# Opfilemanager
+ifeq ($(TARGET_INCLUDE_OP_FILE_MANAGER), true)
+include vendor/opfilemanager/config.mk
+endif
+
 # Storage manager
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.storage_manager.enabled=true
