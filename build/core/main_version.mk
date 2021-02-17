@@ -21,6 +21,7 @@ endif
 HYCON_BUILD_TYPE ?= UNOFFICIAL
 HYCON_VERSION := 1.5
 HYCON_CODENAME := Zephyrus
+HYCON_MAINTAINER ?= Unknown
 
 CUSTOM_DATE_YEAR := $(shell date -u +%Y)
 CUSTOM_DATE_MONTH := $(shell date -u +%m)
@@ -44,4 +45,6 @@ ADDITIONAL_BUILD_PROPERTIES += \
     org.pixelexperience.version.display=$(CUSTOM_VERSION) \
     org.pixelexperience.build_date=$(CUSTOM_BUILD_DATE) \
     org.pixelexperience.build_date_utc=$(CUSTOM_BUILD_DATE_UTC) \
+    org.hycon.build_maintainer=$(HYCON_MAINTAINER) \
+    org.hycon.version.prop=$(CUSTOM_PLATFORM_VERSION) \
     org.pixelexperience.build_type=$(HYCON_BUILD_TYPE)
