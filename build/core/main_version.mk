@@ -19,8 +19,8 @@ endif
 
 # Branding
 HYCON_BUILD_TYPE ?= UNOFFICIAL
-HYCON_VERSION := 2.0
-HYCON_CODENAME := Blizzard
+HYCON_VERSION := 2.5
+HYCON_CODENAME := Hashira
 HYCON_MAINTAINER ?= Unknown
 
 CUSTOM_DATE_YEAR := $(shell date -u +%Y)
