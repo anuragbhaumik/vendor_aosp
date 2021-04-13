@@ -137,7 +137,8 @@ PRODUCT_PACKAGES += \
     HyconThemesStub \
     OmniStyle \
     StitchImage \
-    ThemePicker
+    ThemePicker \
+    HyconWallpapers
 
 # Plugins
 include packages/apps/Plugins/plugins.mk
