@@ -19,8 +19,8 @@ endif
 
 # Branding
 HYCON_BUILD_TYPE ?= UNOFFICIAL
-HYCON_VERSION := 2.5
-HYCON_CODENAME := Hashira
+HYCON_VERSION := 3.0
+HYCON_CODENAME := Aurora
 HYCON_MAINTAINER ?= Unknown
 
 CUSTOM_DATE_YEAR := $(shell date -u +%Y)
